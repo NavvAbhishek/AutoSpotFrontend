@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div className='h-screen w-screen bg-green-500 flex justify-center items-center'>
-      <h1 className='text-3xl font-bold'>This is Our AutoSpot Vehicle Service Centers Site... 🚗</h1>
+    <div>
+      <NavBar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
