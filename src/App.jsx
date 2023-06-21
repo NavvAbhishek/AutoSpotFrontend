@@ -6,6 +6,9 @@ import Services from "./components/Services";
 import Featured from "./components/Featured";
 import ImgText from "./components/ImgText";
 import Blog from "./components/Blog";
+import CustomerExp from "./components/CustomerExp";
+import NewsLetter from "./components/NewsLetter";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +21,9 @@ function App() {
       <Featured/>
       <ImgText/>
       <Blog/>
+      <CustomerExp/>
+      <NewsLetter/>
+      <Footer/>
     </div>
   );
 }
