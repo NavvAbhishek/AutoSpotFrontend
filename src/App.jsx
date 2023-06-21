@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Services from "./components/Services";
 import Featured from "./components/Featured";
 import ImgText from "./components/ImgText";
+import Blog from "./components/Blog";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Services/>
       <Featured/>
       <ImgText/>
+      <Blog/>
     </div>
   );
 }
