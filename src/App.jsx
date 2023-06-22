@@ -1,29 +1,30 @@
-import { useState } from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+
+
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Main from "./components/Main";
-import Services from "./components/Services";
-import Featured from "./components/Featured";
-import ImgText from "./components/ImgText";
-import Blog from "./components/Blog";
-import CustomerExp from "./components/CustomerExp";
-import NewsLetter from "./components/NewsLetter";
-import Footer from "./components/Footer";
+import Banner from "./components/Banner";
+
+import AboutUsPage from "./pages/AboutPage";
+import BlogPage from "./pages/BlogPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <NavBar />
-      <Main/>
-      <Services/>
-      <Featured/>
-      <ImgText/>
-      <Blog/>
-      <CustomerExp/>
-      <NewsLetter/>
-      <Footer/>
+      <BrowserRouter>
+        <Banner/>
+        <NavBar/>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="About Us" element={<AboutUsPage />} />
+          <Route path="Blog" element={<BlogPage />} />
+          <Route path="Services" element={<ServicesPage />} />
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/Logo.png";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -65,7 +66,7 @@ export default function NavBar() {
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
-                        {item.name}
+                         <NavLink to={item.name}>{item.name}</NavLink>
                       </a>
                     ))}
                   </div>
