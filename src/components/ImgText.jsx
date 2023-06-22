@@ -3,9 +3,9 @@ import ImgTextImg from "../assets/ImgTextImg.jpg";
 
 export default function ImgText() {
   return (
-      <div className="flex flex-wrap justify-center items-center gap-12 max-w-full mt-24 xs:px-8 bg-gray-50">
+      <div className="flex flex-wrap justify-center items-center gap-12 max-w-full mt-24 py-12 xs:px-8 bg-gray-50">
         <div>
-          <img src={ImgTextImg} alt="" className="w-30rem h-auto xs:w-96 py-12" />
+          <img src={ImgTextImg} alt="" className="w-30rem h-auto xs:w-96" />
         </div>
         <div className="flex flex-col justify-center items-start">
           <p className="text-4xl font-bold xs:text-3xl">Know Our Washing Service</p>
